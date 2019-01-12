@@ -1,0 +1,192 @@
+  #cssmenu ul,
+  #cssmenu li,
+  #cssmenu span,
+  #cssmenu a {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+  }
+  #cssmenu {
+    height: 49px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    background:#ffff80;
+    
+    text-align: center;
+  }
+  #cssmenu:after,
+  #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both;
+    text-align: center;
+  }
+  #cssmenu a {
+    background: #ffff80;
+    color: black;
+    display: inline-block;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 49px;
+    padding: 0 80px;
+    text-decoration: none;
+    text-align: center;
+  }
+  #cssmenu ul {
+    list-style: none;
+    text-align: center;
+  }
+  #cssmenu > ul {
+    float: left;
+    text-align: center;
+  }
+  #cssmenu > ul > li {
+    float: left;
+    text-align: center;
+  }
+  #cssmenu > ul > li:hover:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffb3;
+    margin-left: -10px;
+    text-align: center;
+  }
+  #cssmenu > ul > li:first-child > a {
+    border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    text-align: center;
+  }
+  #cssmenu > ul > li:last-child > a {
+    border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    text-align: center;
+  }
+  #cssmenu > ul > li.active > a {
+    background: #ffff80;
+    text-align: center;
+  }
+  #cssmenu > ul > li:hover > a {
+    background: #ffff80;
+    text-align: center;
+  }
+  #cssmenu .has-sub {
+    z-index: 1;
+    text-align: center;
+  }
+  #cssmenu .has-sub:hover > ul {
+    display: block;
+    text-align: center;
+  }
+  #cssmenu .has-sub ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+  #cssmenu .has-sub ul li {
+    *margin-bottom: -1px;
+    text-align: center;
+  }
+  #cssmenu .has-sub ul li a {
+    background: #ffffb3;
+    filter: none;
+    font-size: 11px;
+    display: block;
+    line-height: 120%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #cssmenu .has-sub ul li:hover a {
+    background: #ffff4d;
+    text-align: center;
+  }
+  #cssmenu .has-sub .has-sub:hover > ul {
+    display: block;
+    text-align: center;
+  }
+  #cssmenu .has-sub .has-sub ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    text-align: center;
+  }
+ body{
+color:#000;
+
+background-color:#e6f7ff;
+font-family:Tahoma, sans-serif;
+font-size:18px;
+margin:0;
+padding:0;
+}
+.header{
+  background-color: #ccffcc;
+  height: 60px;
+}
+.header .img-responsive{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 39%;
+  margin-top: 5px;
+}
+.header center b{
+  font-size: 28px;
+}
+input{
+font-size:16px;
+padding:6px;
+border: 1px solid #000;
+}
+
+.panel{
+background-color:#00e699;
+box-shadow:0 2px 5px #000;
+padding:18px;
+line-height:28px;
+margin:100px auto 2px;
+max-width:380px;
+border-radius: 10px;
+}
+
+.tombol{
+color:#000;
+font-size:14px;
+background-color:lightgreen;
+boder-bottom:2px solid lightgreen;
+padding:8px;
+margin:2px;
+}
+
+.tombol:hover{
+background-color:green;
+}
+
+a{
+  text-decoration:none;
+  color: #F57C00;
+}
+.footer{
+  max-width: 100%;
+  padding: 13px;
+  background-color: #ffff80;
+}
